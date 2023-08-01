@@ -1,0 +1,86 @@
+/* Write your CSS here */
+* {
+  box-sizing: border-box;
+}
+.nav-container {
+  width: 100vw;
+}
+.nav-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-color: #ffffff;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.menu-icon {
+  height: 40px;
+  width: 40px;
+}
+.close-button {
+  background-color: transparent;
+  border: 0px none transparent;
+  outline: none;
+  align-self: end;
+}
+
+.trigger-button {
+  background-color: transparent;
+  border: 0px none transparent;
+  outline: none;
+}
+
+.modal-container {
+  width: 90%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.list-container {
+  list-style-type: none;
+}
+.link-container {
+  display: flex;
+  flex-direction: column;
+}
+.nav-link-content {
+  color: #616e7c;
+  font-family: 'Roboto';
+  margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .nav-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  .menu-icon {
+    height: 60px;
+    width: 60px;
+  }
+}

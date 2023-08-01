@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.image-sm {
+  align-self: center;
+}
+.image-lg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image-sm {
+    display: none;
+  }
+  .image-lg {
+    display: block;
+  }
+}
