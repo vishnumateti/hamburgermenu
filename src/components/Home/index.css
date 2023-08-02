@@ -1,18 +1,25 @@
 /* Write your CSS here */
+* {
+  box-sizing: border-box;
+}
 .bg-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 .home-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 .image-sm {
   align-self: center;
+
+  width: 70%;
 }
 .image-lg {
   display: none;
@@ -24,5 +31,7 @@
   }
   .image-lg {
     display: block;
+    width: 700px;
+    max-width: 900px;
   }
 }

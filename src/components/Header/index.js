@@ -29,7 +29,7 @@ const Header = () => (
             <GiHamburgerMenu size="30" />
           </button>
         }
-        className="popup-container"
+        className="popup-content"
       >
         {close => (
           <div className="modal-container">
@@ -39,7 +39,7 @@ const Header = () => (
               className="trigger-button"
               onClick={() => close()}
             >
-              <IoMdClose size="30" />
+              <IoMdClose className="close-icon" />
             </button>
             <ul className="link-container">
               <li className="list-container">
@@ -48,8 +48,8 @@ const Header = () => (
                   to="/"
                   onClick={() => close()}
                 >
-                  <AiFillHome size="30" color="#616e7c" />
-                  <p className="nav-link-content">Home</p>
+                  <AiFillHome size="36" color="#616e7c" />
+                  <h1 className="nav-link-content">Home</h1>
                 </Link>
               </li>
 
@@ -59,8 +59,8 @@ const Header = () => (
                   to="/about"
                   onClick={() => close()}
                 >
-                  <BsInfoCircleFill size="30" color="#616e7c" />
-                  <p className="nav-link-content">About</p>
+                  <BsInfoCircleFill size="36" color="#616e7c" />
+                  <h1 className="nav-link-content">About</h1>
                 </Link>
               </li>
             </ul>
